@@ -15,12 +15,12 @@ const Header = () => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography color={'white'} variant='h6' component='div' sx={{ flexGrow: 1, my: 2 }}>
-        <img src={Logo} alt='logo' height={'70'} width='250' />
+        <img src={Logo} alt='logo' height={'70'} width='180' />
       </Typography>
       <Divider />
       <ul className='mobile-navigation'>
         <li>
-          <NavLink activeClassName='active' to={'/'}>
+          <NavLink className={(navData) => (navData.isActive ? 'active' : 'none')} to={'/'}>
             首頁
           </NavLink>
         </li>
@@ -42,7 +42,7 @@ const Header = () => {
         <AppBar component={'nav'} sx={{ bgcolor: 'white' }}>
           <Toolbar>
             <IconButton
-              color='inherit'
+              color='black'
               aria-label='open drawer'
               edge='start'
               sx={{
@@ -54,12 +54,12 @@ const Header = () => {
               <MenuIcon />
             </IconButton>
             <Typography color={'white'} variant='h6' component='div' sx={{ flexGrow: 1 }}>
-              <img src={Logo} alt='logo' height={'70'} width='220' />
+              <img src={Logo} alt='logo' height={'70'} width='180' />
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <ul className='navigation-menu'>
                 <li>
-                  <NavLink activeClassName='active' to={'/'}>
+                  <NavLink className={(navData) => (navData.isActive ? 'active' : 'none')} to={'/'}>
                     首頁
                   </NavLink>
                 </li>

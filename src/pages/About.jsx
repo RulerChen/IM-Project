@@ -1,9 +1,11 @@
-import Layout from '../components/Layout';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import { Box, Typography } from '@mui/material';
 
 const About = () => {
   return (
-    <Layout>
+    <>
+      <Header />
       <Box
         sx={{
           my: 15,
@@ -50,7 +52,8 @@ const About = () => {
           eaque temporibus porro? Aspernatur beatae deleniti illo autem!
         </p>
       </Box>
-    </Layout>
+      <Footer />
+    </>
   );
 };
 

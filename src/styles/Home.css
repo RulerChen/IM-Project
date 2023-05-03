@@ -65,7 +65,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     color: black;
   }
   .home .headerContainer h1 {
@@ -75,7 +75,7 @@
     color: black;
   }
   .home .headerContainer p {
-    font-size: 30px;
+    font-size: 20px;
     color: black;
   }
   .headerContainer button {

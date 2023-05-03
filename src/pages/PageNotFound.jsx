@@ -1,10 +1,12 @@
-import Layout from '../components/Layout';
-
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 const Pagenotfound = () => {
   return (
-    <Layout>
+    <>
+      <Header />
       <h1>Page Not Found</h1>
-    </Layout>
+      <Footer />
+    </>
   );
 };
 
