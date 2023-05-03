@@ -52,8 +52,13 @@ const Contact = () => {
               <TableBody>
                 <TableRow>
                   <TableCell>
-                    <LocationOnIcon sx={{ color: 'red', pt: 1 }} /> 大墩十九街112號, Taichung,
-                    Taiwan
+                    <LocationOnIcon sx={{ color: 'red', pt: 1 }} />
+                    <a
+                      href='https://goo.gl/maps/VBPsj487V1grV4f37'
+                      style={{ textDecoration: 'none', color: 'black' }}
+                    >
+                      大墩十九街112號, Taichung, Taiwan
+                    </a>
                   </TableCell>
                 </TableRow>
                 <TableRow>
