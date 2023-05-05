@@ -1,6 +1,7 @@
 import menu1 from '../assets/menu1.jpg';
 import menu2 from '../assets/menu2.jpg';
 import menu3 from '../assets/menu3.jpg';
+import menu4 from '../assets/menu4.jpg';
 
 export const MenuList = [
   {
@@ -17,17 +18,17 @@ export const MenuList = [
     price: '?',
   },
   {
-    name: '麻油猴頭菇',
-    description:
-      '想來點不一樣的主食嗎？那就來試試我們的麻油猴頭菇，新鮮猴頭菇配上麻油獨有的香氣，奇特但卻讓人忍不住一口接一口。',
-    image: menu2,
-    price: '260(素)/300(肉)',
-  },
-  {
     name: '德式香腸貝果早午餐',
     description:
       '充滿煙燻味的德式香腸，配上經過簡單調味的小農蔬菜，每一口都讓你食指大動，再咬下外表酥脆的貝果，滿足您一天的營養。',
     image: menu3,
     price: '260',
+  },
+  {
+    name: '麻油猴頭菇',
+    description:
+      '想來點不一樣的主食嗎？那就來試試我們的麻油猴頭菇，新鮮猴頭菇配上麻油獨有的香氣，奇特但卻讓人忍不住一口接一口。',
+    image: menu4,
+    price: '260(素)/300(肉)',
   },
 ];
