@@ -1,45 +1,11 @@
-import Dosa from '../assets/dosa.jpg';
-import Chola from '../assets/chhola.jpg';
-import Idli from '../assets/idli.jpg';
-import MasalaDosa from '../assets/masala.jpg';
-import Paneer from '../assets/paneer.jpg';
-import Gujrati from '../assets/gujrati.jpeg';
+import space1 from '../assets/space1.jpg';
 
 export const SpaceList = [
   {
-    name: 'Dosa',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: Dosa,
-    price: 200,
-  },
-  {
-    name: 'Chola',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: Chola,
-    price: 250,
-  },
-  {
-    name: 'Idli Sambhar',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: Idli,
-    price: 300,
-  },
-  {
-    name: 'Masala Dosa',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: MasalaDosa,
-    price: 100,
-  },
-  {
-    name: 'Paneer',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: Paneer,
-    price: 400,
-  },
-  {
-    name: 'Gujrati',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: Gujrati,
-    price: 500,
+    name: '空間出租',
+    description:
+      '除了食物之外，三夏也提供場地出租的服務，不管是親子活動，商務會議還是藝文展演，都歡迎與我們聯繫',
+    image: space1,
+    price: '?',
   },
 ];

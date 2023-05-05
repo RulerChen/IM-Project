@@ -1,6 +1,11 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, CardMedia } from '@mui/material';
+
+import space1 from '../assets/space1.jpg';
+import space2 from '../assets/space2.jpg';
+import space3 from '../assets/space3.jpg';
+import space4 from '../assets/space4.jpg';
 
 const About = () => {
   return (
@@ -9,15 +14,17 @@ const About = () => {
       <Box
         sx={{
           my: 15,
+          mx: 'auto',
           textAlign: 'center',
+          width: '80%',
           p: 2,
           '& h4': {
             fontWeight: 'bold',
-            my: 2,
+            // my: 2,
             fontSize: '2rem',
           },
           '& p': {
-            textAlign: 'justify',
+            textAlign: 'center',
           },
           '@media (max-width:600px)': {
             mt: 0,
@@ -27,30 +34,64 @@ const About = () => {
           },
         }}
       >
-        <Typography variant='h4'>Welcome To My Resturant</Typography>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat quod, suscipit, aperiam
-          totam autem culpa cum eveniet dolorum quasi est perspiciatis laborum. Nam recusandae nihil
-          quia odio voluptatibus facere omnis facilis rerum? Ab eum beatae nobis reiciendis, qui
-          temporibus aliquid, nesciunt velit sed quam recusandae necessitatibus, tempora maxime.
-          Repellendus incidunt, maxime labore dolorum eos aperiam unde? At veritatis nesciunt eos
-          quas cupiditate blanditiis est quam maiores, amet, soluta exercitationem voluptatum,
-          veniam assumenda? Ratione perferendis officiis deserunt nostrum aspernatur sed asperiores!
-          Earum sunt placeat ducimus sint, deleniti amet esse saepe voluptatem commodi laudantium
-          quibusdam repellat nobis libero at consectetur adipisci ipsa.
-        </p>
+        <Typography variant='h4'>Welcome To 三夏好食書坊 🙌</Typography>
         <br />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, deserunt libero
-          reprehenderit cum sint fugit cumque temporibus modi facere eveniet amet obcaecati ducimus
-          harum velit maxime vel qui voluptatibus quam odio corrupti saepe, voluptas dolorum quidem
-          tempore? Esse sapiente molestias minus enim quisquam dolorum eum culpa ullam impedit velit
-          quo, corporis ducimus numquam dignissimos inventore maiores. Nam deleniti itaque nostrum
-          neque dolorum dolores, aliquam, voluptatum sapiente doloribus laborum perspiciatis ipsam,
-          quo ut nisi distinctio sunt nihil est blanditiis perferendis eveniet nesciunt! Nostrum,
-          voluptatum eveniet repellat vel officia deleniti tempore voluptatibus perferendis esse
-          eaque temporibus porro? Aspernatur beatae deleniti illo autem!
-        </p>
+        <p>紀念三個好朋友相識以來的盛夏光年</p>
+        <p>三夏也是古代樂曲《肆夏》《韶夏》《納夏》的總稱</p>
+        <p>音樂、好書、好食，就是我們夢想的起點 適合放空、閱讀、聚會、手作課程、音樂發表......</p>
+        <br />
+
+        <Typography variant='h4'>場館照片</Typography>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+          <CardMedia
+            sx={{
+              height: '25vw',
+              width: '25vw',
+              margin: '10px',
+              border: '1px solid grey',
+              minWidth: '300px',
+              minHeight: '300px',
+            }}
+            component={'img'}
+            src={space1}
+          ></CardMedia>
+          <CardMedia
+            sx={{
+              height: '25vw',
+              width: '25vw',
+              margin: '10px',
+              border: '1px solid grey',
+              minWidth: '300px',
+              minHeight: '300px',
+            }}
+            component={'img'}
+            src={space2}
+          ></CardMedia>
+          <CardMedia
+            sx={{
+              height: '25vw',
+              width: '25vw',
+              margin: '10px',
+              border: '1px solid grey',
+              minWidth: '300px',
+              minHeight: '300px',
+            }}
+            component={'img'}
+            src={space3}
+          ></CardMedia>
+          <CardMedia
+            sx={{
+              height: '25vw',
+              width: '25vw',
+              margin: '10px',
+              border: '1px solid grey',
+              minWidth: '300px',
+              minHeight: '300px',
+            }}
+            component={'img'}
+            src={space4}
+          ></CardMedia>
+        </Box>
       </Box>
       <Footer />
     </>

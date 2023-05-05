@@ -1,5 +1,5 @@
 .home {
-  height: 105vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: left;
@@ -7,6 +7,21 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url('../assets/banner.jpg');
+  animation: slide 2s ease-in;
+  animation-name: slide;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .headerContainer {
@@ -56,6 +71,7 @@
   .home {
     justify-content: center;
     align-items: center;
+    animation: none;
   }
   .headerContainer {
     margin-left: 0;
@@ -67,6 +83,8 @@
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.8);
     color: black;
+    animation: slide 2s ease-in;
+    animation-name: slide;
   }
   .home .headerContainer h1 {
     font-size: 40px;

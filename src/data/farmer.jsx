@@ -1,45 +1,11 @@
-import Dosa from '../assets/dosa.jpg';
-import Chola from '../assets/chhola.jpg';
-import Idli from '../assets/idli.jpg';
-import MasalaDosa from '../assets/masala.jpg';
-import Paneer from '../assets/paneer.jpg';
-import Gujrati from '../assets/gujrati.jpeg';
+import farmer1 from '../assets/farmer1.jpg';
 
 export const FarmerList = [
   {
-    name: 'Dosa',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: Dosa,
-    price: 200,
-  },
-  {
-    name: 'Chola',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: Chola,
-    price: 250,
-  },
-  {
-    name: 'Idli Sambhar',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: Idli,
-    price: 300,
-  },
-  {
-    name: 'Masala Dosa',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: MasalaDosa,
-    price: 100,
-  },
-  {
-    name: 'Paneer',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: Paneer,
-    price: 400,
-  },
-  {
-    name: 'Gujrati',
-    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat, ab!',
-    image: Gujrati,
-    price: 500,
+    name: '新鮮橄欖',
+    description:
+      '新鮮橄欖以天然甘草糖水醃漬後⁡⁡，，酸澀釋出，甜蜜漬入⁡⁡，可做熱茶、冰飲、氣泡飲，濃淡隨意，歡喜自在，⁡⁡從果肉至湯汁皆可實用，⁡保證意猶未盡！',
+    image: farmer1,
+    price: '?',
   },
 ];

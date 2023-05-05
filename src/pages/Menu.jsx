@@ -11,6 +11,7 @@ import {
   CardMedia,
   Divider,
   Typography,
+  Button,
 } from '@mui/material';
 
 const Menu = () => {
@@ -19,6 +20,16 @@ const Menu = () => {
       <Header />
       <Typography variant='h4' sx={{ margin: '30px 0 0 20px' }}>
         農產品 👨‍🌾
+        <Button
+          variant='contained'
+          href='https://line.me/R/ti/p/@290jkvwn?from=page&liff.referrer=https%3A%2F%2Fl.facebook.com%2F&accountId=290jkvwn&fbclid=IwAR0IIBG0krWZu2Tt8DZQTimmRUyrPxEJ7hcMoF1Cmcwwkidjr5mLaLzdKkc'
+          sx={{
+            backgroundColor: 'green',
+            ml: 4,
+          }}
+        >
+          按我購買
+        </Button>
       </Typography>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         {FarmerList.map((menu) => (
@@ -43,6 +54,16 @@ const Menu = () => {
       <Divider />
       <Typography variant='h4' sx={{ margin: '30px 0 0 20px' }}>
         菜單 🥗
+        <Button
+          variant='contained'
+          href='https://line.me/R/ti/p/@290jkvwn?from=page&liff.referrer=https%3A%2F%2Fl.facebook.com%2F&accountId=290jkvwn&fbclid=IwAR0IIBG0krWZu2Tt8DZQTimmRUyrPxEJ7hcMoF1Cmcwwkidjr5mLaLzdKkc'
+          sx={{
+            backgroundColor: 'green',
+            ml: 4,
+          }}
+        >
+          按我購買
+        </Button>
       </Typography>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         {MenuList.map((menu) => (
@@ -67,6 +88,16 @@ const Menu = () => {
       <Divider />
       <Typography variant='h4' sx={{ margin: '30px 0 0 20px' }}>
         空間出租 🧱
+        <Button
+          variant='contained'
+          href='https://line.me/R/ti/p/@290jkvwn?from=page&liff.referrer=https%3A%2F%2Fl.facebook.com%2F&accountId=290jkvwn&fbclid=IwAR0IIBG0krWZu2Tt8DZQTimmRUyrPxEJ7hcMoF1Cmcwwkidjr5mLaLzdKkc'
+          sx={{
+            backgroundColor: 'green',
+            ml: 4,
+          }}
+        >
+          按我購買
+        </Button>
       </Typography>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
         {SpaceList.map((menu) => (
