@@ -95,7 +95,7 @@ const Menu = () => {
       </Box>
       <Divider />
       <Typography variant='h4' sx={{ margin: '30px 0 0 20px' }}>
-        菜單 🥗
+        人氣商品 🥗
         <Button
           variant='contained'
           href='https://line.me/R/ti/p/@290jkvwn?from=page&liff.referrer=https%3A%2F%2Fl.facebook.com%2F&accountId=290jkvwn&fbclid=IwAR0IIBG0krWZu2Tt8DZQTimmRUyrPxEJ7hcMoF1Cmcwwkidjr5mLaLzdKkc'
@@ -153,7 +153,7 @@ const Menu = () => {
               />
               <CardContent>
                 <Typography variant='h5' gutterBottom component={'div'}>
-                  {menu.name} ${menu.price}
+                  {menu.name}
                 </Typography>
                 <Typography variant='body2'>{menu.description}</Typography>
               </CardContent>

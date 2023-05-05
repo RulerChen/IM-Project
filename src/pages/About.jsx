@@ -27,7 +27,7 @@ const About = () => {
             textAlign: 'center',
           },
           '@media (max-width:600px)': {
-            mt: 0,
+            mt: '32px',
             '& h4 ': {
               fontSize: '1.5rem',
             },
