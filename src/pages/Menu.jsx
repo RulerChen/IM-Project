@@ -32,31 +32,34 @@ const Menu = () => {
             width: '100vw',
           }}
         >
-          <CardMedia
-            sx={{ maxWidth: '100%', maxHeight: '100vh', objectFit: 'contain', overflow: 'auto' }}
-            component={'img'}
-            src={menu}
-            onClick={() => setModal(false)}
-          ></CardMedia>
+          <Card>
+            <CardActionArea>
+              <CardMedia
+                sx={{
+                  maxWidth: '100%',
+                  maxHeight: '100vh',
+                  objectFit: 'contain',
+                  overflow: 'auto',
+                }}
+                component={'img'}
+                src={menu}
+                onClick={() => setModal(false)}
+              ></CardMedia>
+            </CardActionArea>
+          </Card>
         </Box>
       </Modal>
       <Typography variant='h4' sx={{ margin: '30px 0 0 20px' }}>
         菜單 🗒︎
       </Typography>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-        <CardMedia
-          sx={{
-            width: '25vw',
-            margin: '10px',
-            border: '1px solid grey',
-            minWidth: '300px',
-            minHeight: '300px',
-          }}
-          component={'img'}
-          src={menu}
-          onClick={() => setModal(true)}
-        ></CardMedia>
+        <Card sx={{ maxWidth: '390px', display: 'flex', m: 2 }} onClick={() => setModal(true)}>
+          <CardActionArea>
+            <CardMedia sx={{ minHeight: '400px' }} component={'img'} src={menu} alt={'menu'} />
+          </CardActionArea>
+        </Card>
       </Box>
+      <Divider></Divider>
       <Typography variant='h4' sx={{ margin: '30px 0 0 20px' }}>
         農產品 👨‍🌾
         <Button
