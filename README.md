@@ -7,3 +7,4 @@ npm run dev
 
 ## 部屬網站
 [Netlify](https://main--unique-bonbon-3888c7.netlify.app/)
+[LINK](https://ssbookscoffee.store/)
