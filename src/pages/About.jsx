@@ -13,7 +13,7 @@ const About = () => {
       <Header />
       <Box
         sx={{
-          my: 15,
+          my: 5,
           mx: 'auto',
           textAlign: 'center',
           width: '80%',
