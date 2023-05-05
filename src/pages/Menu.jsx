@@ -23,7 +23,9 @@ const Menu = () => {
     <>
       <Header />
       <Modal open={modal} onClose={() => setModal(false)}>
-        <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+        <Box
+          sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', alignItems: 'center' }}
+        >
           <CardMedia
             sx={{ maxWidth: '100%', maxHeight: '100vh', objectFit: 'contain', overflow: 'auto' }}
             component={'img'}
