@@ -5,17 +5,17 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 import Logo from '../assets/logo.png';
 import '../styles/Header.css';
+
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
-  // hndle menu click
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
-  //menu drawer
+  //  TODO: change icon size
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography color={'white'} variant='h6' component='div' sx={{ flexGrow: 1, my: 2 }}>
-        <img src={Logo} alt='logo' height={'70'} width='180' />
+        <img src={Logo} alt='logo' height={'70'} />
       </Typography>
       <Divider />
       <ul className='mobile-navigation'>
@@ -54,7 +54,7 @@ const Header = () => {
               <MenuIcon />
             </IconButton>
             <Typography color={'white'} variant='h6' component='div' sx={{ flexGrow: 1 }}>
-              <img src={Logo} alt='logo' height={'70'} width='180' />
+              <img src={Logo} alt='logo' height={'70'} />
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               <ul className='navigation-menu'>

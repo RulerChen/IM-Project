@@ -1,6 +1,6 @@
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import MessageIcon from '@mui/icons-material/Message';
+import Facebook from '../assets/facebook.svg';
+import Instagram from '../assets/instagram.svg';
+import Line from '../assets/line.svg';
 
 import { Box, Typography } from '@mui/material';
 const Footer = () => {
@@ -10,27 +10,38 @@ const Footer = () => {
         <Box
           sx={{
             my: 3,
-            '& svg': {
+            '& img': {
               fontSize: '60px',
               cursor: 'pointer',
               mr: 2,
             },
-            '& svg:hover': {
+            '& img:hover': {
               color: 'goldenrod',
               transform: 'translateX(5px)',
               transition: 'all 400ms',
             },
           }}
         >
-          {/* icons */}
-          <a href='https://www.instagram.com/ss.bookscoffee/'>
-            <InstagramIcon sx={{ color: '#E4405F' }} />
+          <a
+            href='https://www.instagram.com/ss.bookscoffee/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img src={Instagram} alt='Instagram' width={'60px'} />
           </a>
-          <a href='https://www.facebook.com/ss.bookscoffee/'>
-            <FacebookIcon sx={{ color: '#1877F2' }} />
+          <a
+            href='https://www.facebook.com/ss.bookscoffee/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img src={Facebook} alt='Instagram' width={'60px'} />
           </a>
-          <a href='https://line.me/R/ti/p/@290jkvwn?from=page&liff.referrer=https%3A%2F%2Fl.facebook.com%2F&accountId=290jkvwn&fbclid=IwAR0IIBG0krWZu2Tt8DZQTimmRUyrPxEJ7hcMoF1Cmcwwkidjr5mLaLzdKkc'>
-            <MessageIcon sx={{ color: '#00C300' }} />
+          <a
+            href='https://line.me/R/ti/p/@290jkvwn?from=page&liff.referrer=https%3A%2F%2Fl.facebook.com%2F&accountId=290jkvwn&fbclid=IwAR0IIBG0krWZu2Tt8DZQTimmRUyrPxEJ7hcMoF1Cmcwwkidjr5mLaLzdKkc'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img src={Line} alt='Instagram' width={'60px'} />
           </a>
         </Box>
         <Typography

@@ -13,18 +13,26 @@ import {
 } from '@mui/material';
 import TravelExploreIcon from '@mui/icons-material/TravelExplore';
 const Parking = () => {
-  const [parking, setParking] = useState([]);
+  const [parking, setParking] = useState({});
+  const [parking2, setParking2] = useState({});
+  // TODO: change api
   useEffect(() => {
     axios
       .get(
-        'https://datacenter.taichung.gov.tw/swagger/OpenData/56a846ca-bc23-4754-b14a-0170f0541e09',
+        'https://motoretag.taichung.gov.tw/DataAPI/api/ParkingAPI?fbclid=IwAR2ZxQxUtjExm48SVcOIc5YTx9vC5q8Egy5Z8t53mGJ0BJl5OmupJKflEbo&ID=bettermoney02',
       )
       .then((res) => {
-        console.log(res.data[6].ParkingLots);
-        console.log(res.data[6].ParkingLots[0].AvailableCar);
-        console.log(res.data[6].ParkingLots[2].AvailableCar);
-        console.log(res.data[6].ParkingLots[3].AvailableCar);
-        setParking(res.data[6].ParkingLots);
+        setParking(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    axios
+      .get(
+        'https://motoretag.taichung.gov.tw/DataAPI/api/ParkingAPI?fbclid=IwAR2ZxQxUtjExm48SVcOIc5YTx9vC5q8Egy5Z8t53mGJ0BJl5OmupJKflEbo&ID=UnicomDD',
+      )
+      .then((res) => {
+        setParking2(res.data);
       })
       .catch((err) => {
         console.log(err);
@@ -61,15 +69,15 @@ const Parking = () => {
                         textDecoration: 'none',
                       }}
                       component='a'
-                      href='https://goo.gl/maps/22yeSG7oeNuV7usDA'
+                      href='https://goo.gl/maps/Ck9EFWMwY7J63ERT8'
                       target='_blank'
                       color={'inherit'}
                     >
                       <span>
                         <TravelExploreIcon sx={{ color: 'green', pt: 0.5 }} />
-                        新光三越停車場
+                        東興立體停車場
                       </span>
-                      <span>剩餘車位 : {parking[0]?.AvailableCar}</span>
+                      <span>剩餘車位 : {parking?.AvailableCar}</span>
                     </Box>
                   </TableCell>
                 </TableRow>
@@ -82,36 +90,15 @@ const Parking = () => {
                         textDecoration: 'none',
                       }}
                       component='a'
-                      href='https://goo.gl/maps/EFwAUzdG5VKWrhE97'
+                      href='https://goo.gl/maps/fjWXiqdzP84kiZ2k6'
                       target='_blank'
                       color={'inherit'}
                     >
                       <span>
                         <TravelExploreIcon sx={{ color: 'green', pt: 0.5 }} />
-                        市政公園停車場
+                        台灣聯通停車場-台中大墩場
                       </span>
-                      <span>剩餘車位 : {parking[2]?.AvailableCar}</span>
-                    </Box>
-                  </TableCell>
-                </TableRow>
-                <TableRow>
-                  <TableCell>
-                    <Box
-                      sx={{
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        textDecoration: 'none',
-                      }}
-                      component='a'
-                      href='https://goo.gl/maps/2pyYgSmWs6h6jTtu9'
-                      target='_blank'
-                      color={'inherit'}
-                    >
-                      <span>
-                        <TravelExploreIcon sx={{ color: 'green', pt: 0.5 }} />
-                        惠新停車場
-                      </span>
-                      <span>剩餘車位 : {parking[3]?.AvailableCar}</span>
+                      <span>剩餘車位 : {parking2?.AvailableCar}</span>
                     </Box>
                   </TableCell>
                 </TableRow>

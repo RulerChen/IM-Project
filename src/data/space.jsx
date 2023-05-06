@@ -2,9 +2,8 @@ import space1 from '../assets/space1.jpg';
 
 export const SpaceList = [
   {
-    name: '空間出租',
-    description:
-      '除了食物之外，三夏也提供場地出租的服務，不管是親子活動，商務會議還是藝文展演，都歡迎與我們聯繫',
+    name: '場地出租',
+    description: '除了餐飲服務之外，不管是商務會議、手作課程、講座分享還是讀書會都歡迎來電洽詢',
     image: space1,
     price: '依活動類型',
   },
