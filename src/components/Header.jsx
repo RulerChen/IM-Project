@@ -25,7 +25,7 @@ const Header = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to={'/menu'}>菜單</NavLink>
+          <NavLink to={'/menu'}>菜單/場地</NavLink>
         </li>
         <li>
           <NavLink to={'/about'}>關於我們</NavLink>
@@ -64,7 +64,7 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to={'/menu'}>菜單</NavLink>
+                  <NavLink to={'/menu'}>菜單/場地</NavLink>
                 </li>
                 <li>
                   <NavLink to={'/about'}>關於我們</NavLink>

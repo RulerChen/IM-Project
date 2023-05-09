@@ -1,6 +1,7 @@
 import Facebook from '../assets/facebook.svg';
 import Instagram from '../assets/instagram.svg';
 import Line from '../assets/line.svg';
+import Form from '../assets/form.svg';
 
 import { Box, Typography } from '@mui/material';
 const Footer = () => {
@@ -42,6 +43,9 @@ const Footer = () => {
             rel='noopener noreferrer'
           >
             <img src={Line} alt='Instagram' width={'60px'} />
+          </a>
+          <a href='https://docs.google.com/forms/d/1R1WqiL6kihU69ukyq2wg_dhjyzlhvXa0-M4dSzCnzuc/edit' target='_blank' rel='noopener noreferrer'>
+            <img src={Form} alt='Form' width={'60px'} height={'60px'} />
           </a>
         </Box>
         <Typography

@@ -2,10 +2,12 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Box, Typography, CardMedia } from '@mui/material';
 
-import space1 from '../assets/space1.jpg';
-import space2 from '../assets/space2.jpg';
-import space3 from '../assets/space3.jpg';
-import space4 from '../assets/space4.jpg';
+import a10 from '../assets/a10.jpg';
+import a11 from '../assets/a11.jpg';
+import a12 from '../assets/a12.jpg';
+import a13 from '../assets/a13.jpg';
+import a14 from '../assets/a14.jpg';
+import a15 from '../assets/a15.jpg';
 
 const About = () => {
   return (
@@ -41,7 +43,6 @@ const About = () => {
         <p>音樂、好書、好食，就是我們夢想的起點 適合放空、閱讀、聚會、手作課程、音樂發表......</p>
         <br />
 
-        <Typography variant='h4'>場館照片</Typography>
         <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
           <CardMedia
             sx={{
@@ -53,7 +54,7 @@ const About = () => {
               minHeight: '300px',
             }}
             component={'img'}
-            src={space1}
+            src={a10}
           ></CardMedia>
           <CardMedia
             sx={{
@@ -65,7 +66,7 @@ const About = () => {
               minHeight: '300px',
             }}
             component={'img'}
-            src={space2}
+            src={a11}
           ></CardMedia>
           <CardMedia
             sx={{
@@ -77,9 +78,9 @@ const About = () => {
               minHeight: '300px',
             }}
             component={'img'}
-            src={space3}
+            src={a12}
           ></CardMedia>
-          <CardMedia
+                    <CardMedia
             sx={{
               height: '25vw',
               width: '25vw',
@@ -89,7 +90,31 @@ const About = () => {
               minHeight: '300px',
             }}
             component={'img'}
-            src={space4}
+            src={a13}
+          ></CardMedia>
+                    <CardMedia
+            sx={{
+              height: '25vw',
+              width: '25vw',
+              margin: '10px',
+              border: '1px solid grey',
+              minWidth: '300px',
+              minHeight: '300px',
+            }}
+            component={'img'}
+            src={a14}
+          ></CardMedia>
+                    <CardMedia
+            sx={{
+              height: '25vw',
+              width: '25vw',
+              margin: '10px',
+              border: '1px solid grey',
+              minWidth: '300px',
+              minHeight: '300px',
+            }}
+            component={'img'}
+            src={a15}
           ></CardMedia>
         </Box>
       </Box>
