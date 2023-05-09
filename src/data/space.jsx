@@ -1,13 +1,13 @@
-import space1 from '../assets/space1.jpg';
 import a06 from '../assets/a06.jpg';
 import a07 from '../assets/a07.jpg';
 import a08 from '../assets/a08.jpg';
+import a16 from '../assets/a16.jpg';
 
 export const SpaceList = [
   {
     name: '場地出租',
     description: '除了餐飲服務之外，不管是商務會議、手作課程、講座分享還是讀書會都歡迎來電洽詢',
-    image: space1,
+    image: a16,
     price: '依活動類型',
   },
   {

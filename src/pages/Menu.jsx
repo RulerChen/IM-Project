@@ -155,7 +155,7 @@ const Menu = () => {
             <Carousel interval={'3000'}>
               {SpaceList.map((menu) => (
                 <CardMedia
-                  sx={{ minHeight: '400px' }}
+                  sx={{ minHeight: '450px' }}
                   component={'img'}
                   src={menu.image}
                   alt={menu.name}
