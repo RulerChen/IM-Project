@@ -15,6 +15,7 @@ import {
   Button,
   Modal,
 } from '@mui/material';
+import Carousel from 'react-material-ui-carousel';
 import menu from '../assets/menu.jpg';
 
 const Menu = () => {
@@ -149,24 +150,27 @@ const Menu = () => {
         </Button>
       </Typography>
       <Box sx={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
-        {SpaceList.map((menu) => (
-          <Card sx={{ maxWidth: '450px', display: 'flex', m: 2 }} key={menu.name}>
-            <CardActionArea>
-              <CardMedia
-                sx={{ minHeight: '400px' }}
-                component={'img'}
-                src={menu.image}
-                alt={menu.name}
-              />
-              <CardContent>
-                <Typography variant='h5' gutterBottom component={'div'}>
-                  {menu.name}
-                </Typography>
-                <Typography variant='body2'>{menu.description}</Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-        ))}
+        <Card sx={{ maxWidth: '450px', display: 'flex', m: 2 }} key={menu.name}>
+          <CardActionArea>
+            <Carousel interval={'3000'}>
+              {SpaceList.map((menu) => (
+                <CardMedia
+                  sx={{ minHeight: '400px' }}
+                  component={'img'}
+                  src={menu.image}
+                  alt={menu.name}
+                  key={menu.name}
+                />
+              ))}
+            </Carousel>
+            <CardContent>
+              <Typography variant='h5' gutterBottom component={'div'}>
+                {SpaceList[0].name}
+              </Typography>
+              <Typography variant='body2'>{SpaceList[0].description}</Typography>
+            </CardContent>
+          </CardActionArea>
+        </Card>
       </Box>
       <Footer />
     </>
