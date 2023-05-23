@@ -1,3 +1,6 @@
+## 簡介
+這是為 "三夏好食書坊" 所寫的官方網站
+
 ## 開啟方式
 ```
 git clone https://github.com/RulerChen/im_finalproject.git
