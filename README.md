@@ -1,7 +1,8 @@
 ## 簡介
-這是為 "三夏好食書坊" 所寫的官方網站
+這是為 "三夏好食書坊" 所寫的官方網站，裡面提供了這家店的各種資訊
 
 ## 開啟方式
+
 ```
 git clone https://github.com/RulerChen/ssbookscoffee_offical_website.git
 
@@ -13,10 +14,6 @@ npm run dev
 ## 部屬網站
 
 [LINK](https://ssbookscoffee.store/)
-
-## 簡介
-
-這是一個為三夏好食書坊所打造的官方網站，裡面提供了這家店的各種資訊
 
 ## 使用技術
 
