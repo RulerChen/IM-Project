@@ -11,10 +11,6 @@ npm install
 npm run dev
 ```
 
-## 部屬網站
-
-[LINK](https://ssbookscoffee.store/)
-
 ## 使用技術
 
 ![image](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
