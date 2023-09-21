@@ -4,8 +4,6 @@
 ## 開啟方式
 
 ```
-git clone https://github.com/RulerChen/ssbookscoffee_offical_website.git
-
 npm install 
 
 npm run dev
